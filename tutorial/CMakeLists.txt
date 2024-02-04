@@ -5,3 +5,6 @@ target_link_libraries(load-mesh PUBLIC ${GCI_DEP_LIBS})
 
 add_executable(basic-mutation 102-BasicMutation/main.cpp)
 target_link_libraries(basic-mutation PUBLIC ${GCI_DEP_LIBS})
+
+add_executable(direction-fields 103-DirectionFields/main.cpp)
+target_link_libraries(direction-fields PUBLIC ${GCI_DEP_LIBS})

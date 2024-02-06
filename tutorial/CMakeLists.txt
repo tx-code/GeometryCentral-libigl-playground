@@ -17,3 +17,6 @@ target_link_libraries(viewer-menu PUBLIC ${GCI_DEP_LIBS} ImGuiExt)
 
 add_executable(imguizmo-demo 106-ImGuizmo/main.cpp)
 target_link_libraries(imguizmo-demo PUBLIC ${GCI_DEP_LIBS} ImGuiExt)
+
+add_executable(events 107-Events/main.cpp)
+target_link_libraries(events PUBLIC ${GCI_DEP_LIBS} igl::igl_glfw)

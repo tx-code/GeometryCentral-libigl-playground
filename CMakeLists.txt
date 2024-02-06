@@ -39,7 +39,14 @@ endif ()
 find_package(Eigen3 REQUIRED)
 find_package(libigl CONFIG REQUIRED)
 find_package(args CONFIG REQUIRED)
+find_package(imgui CONFIG REQUIRED)
+find_package(imguizmo CONFIG REQUIRED)
 
+# Deps (geometry-central)
 add_subdirectory(deps/geometry-central)
 
+# Helpers
+add_subdirectory(src)
+
+# Demo
 add_subdirectory(tutorial)

@@ -95,6 +95,8 @@ namespace imguiext {
     }
 
     bool ImGuiPlugin::mouse_up(int button, int modifier) {
+        ImGui_ImplGlfw_MouseButtonCallback(viewer->window, button, GLFW_RELEASE, modifier);
+        if(ImGui::GetIO().WantCaptureMouse) { return true; }
         //return ImGui::GetIO().WantCaptureMouse;
         // !! Should not steal mouse up
         for (auto& widget: widgets) {

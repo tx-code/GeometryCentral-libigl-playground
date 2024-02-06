@@ -20,3 +20,6 @@ target_link_libraries(imguizmo-demo PUBLIC ${GCI_DEP_LIBS} ImGuiExt)
 
 add_executable(events 107-Events/main.cpp)
 target_link_libraries(events PUBLIC ${GCI_DEP_LIBS} igl::igl_glfw)
+
+add_executable(selection 108-Selection/main.cpp)
+target_link_libraries(selection PUBLIC ${GCI_DEP_LIBS} ImGuiExt)
